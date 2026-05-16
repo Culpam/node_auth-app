@@ -43,7 +43,7 @@ const send = (email: string, subject: string, html: string) => {
 };
 
 const sendActivationLink = (email: string, activationToken: string) => {
-  const link = `${API_URL}/auth/activate/${activationToken}`;
+  const link = `${API_URL}/activate/${activationToken}`;
 
   const html = `
     <h1>Account activation</h1>
@@ -55,7 +55,7 @@ const sendActivationLink = (email: string, activationToken: string) => {
 };
 
 const sendPasswordResetLink = (email: string, resetToken: string) => {
-  const link = `${API_URL}/auth/reset-password/${resetToken}`;
+  const link = `${API_URL}/reset-password/${resetToken}`;
 
   const html = `
     <h1>Password reset</h1>

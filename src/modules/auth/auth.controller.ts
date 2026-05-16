@@ -40,8 +40,7 @@ const forgotPassword: RequestHandler = async (req, res) => {
   await authService.forgotPassword(req.body);
 
   res.json({
-    message:
-      'If an account with that email exists, a password reset link has been sent',
+    message: 'If an account exists, a password reset link has been sent',
   });
 };
 

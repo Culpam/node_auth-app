@@ -1,4 +1,4 @@
-import type { NormalizedUser } from '../modules/users/users.service.js';
+import type { NormalizedUser } from '../modules/users/users.service.ts';
 
 declare global {
   namespace Express {
